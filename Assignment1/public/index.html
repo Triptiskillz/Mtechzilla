@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mtechzilla</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--start nav bar-->
+  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+      </svg>
+      <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+    </div>
+    <div class="block lg:hidden">
+      <button
+        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+
+      </div>
+      <div id="LoginScreen">
+        <a href="#"
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          id="login">Login with Google</a>
+      </div>
+      <div id="dashboard">
+        <a href="#" id="logout"
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          id="login">Logout</a>
+      </div>
+    </div>
+  </nav>
+<!--end nav bar-->
+
+<!--timer part-->
+
+  <div class="flex items-center justify-center h-screen"><!-- center card start -->
+    <div
+      class="p-6 max-w-3xl bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700  inline-flex  "> <!--gobal card start-->
+      <!-- Work Timer -->
+      <div class="p-7 max-w-sm bg-white "> <!--small card start-->
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="work">Work
+          </h5>
+        </a>
+        <div id="work-timer" class="mb-3 font-semibold text-5xl  text-gray-700 dark:text-gray-400 inline-flex ">
+          <p id="wminutes">25</p>
+          <p>:</p>
+          <p id="wseconds">00</p>
+        </div>
+        <br />
+        <a href="#" id="start" 
+          class="inline-flex items-center py-2 px-3 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Start
+        </a>
+      </div>
+
+          <!-- stop Timer -->
+          <div class="p-7 max-w-sm bg-white">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="break">
+              </h5>
+            </a>
+            <div id="break-timer" class="mb-3 font-semibold  text-lg text-gray-700 dark:text-gray-400 inline-flex ">
+              <!--p tag use-->
+            </div>
+            <br />
+            <a href="#" id="stop"
+              class="inline-flex items-center py-2 px-3 mr-10 mt-24 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              stop
+            </a>
+          </div>
+
+
+      <!-- braek Timer -->
+      <div class="p-7 max-w-sm bg-white">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="break">Break
+          </h5>
+        </a>
+        <div id="break-timer" class="mb-3 font-semibold text-5xl text-gray-700 dark:text-gray-400 inline-flex ">
+          <p id="bminutes">05</p>
+          <p>:</p>
+          <p id="bseconds">00</p>
+        </div>
+        <br />
+        <a href="#" id="reset"
+          class="inline-flex items-center py-2 px-3 text-lg  font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Reset
+        </a>
+      </div>
+      <!--end break timer -->
+    </div>
+  </div>
+
+  <!--end timer-->
+
+<!-- login with google using firebase  start -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCJ1xqu8eUKWreGtA9za_3fbf2OrYB29ag",
+      authDomain: "mtechzilla-98614.firebaseapp.com",
+      projectId: "mtechzilla-98614",
+      storageBucket: "mtechzilla-98614.appspot.com",
+      messagingSenderId: "715290094602",
+      appId: "1:715290094602:web:45bf0be5d98988b77c03f3",
+      measurementId: "G-CLTNT3HH69"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    document.getElementById('dashboard').style.display = "none"
+
+    document.getElementById('login').addEventListener('click', GoogleLogin)
+    document.getElementById('logout').addEventListener('click', LogoutUser)
+
+    let provider = new firebase.auth.GoogleAuthProvider()
+
+    function GoogleLogin() {
+     
+      firebase.auth().signInWithPopup(provider).then(res => {
+        console.log(res.user)
+        alert("User Login !");
+        document.getElementById('LoginScreen').style.display = "none"
+        document.getElementById('dashboard').style.display = "block"
+        showUserDetails(res.user)
+      }).catch(e => {
+        console.log(e)
+      })
+    }
+
+    function checkAuthState() {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          document.getElementById('LoginScreen').style.display = "none"
+          document.getElementById('dashboard').style.display = "block"
+          showUserDetails(user)
+        } else {
+
+        }
+      })
+    }
+
+    function LogoutUser() {
+      firebase.auth().signOut().then(() => {
+        alert("User Logout !");
+        document.getElementById('LoginScreen').style.display = "block"
+        document.getElementById('dashboard').style.display = "none"
+      }).catch(e => {
+        console.log(e)
+      })
+    }
+    checkAuthState()
+  </script>
+ <!-- end login part-->
+
+ <!-- js file for timer-->
+<script src="main.js"></script>
+
+</body>
+
+</html>
